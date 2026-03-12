@@ -24,7 +24,11 @@ Bloque integrado
 
 # Sistema de Bloc de notas
 
+<<<<<<< HEAD
 ##
 
 
 fxcxccxxc,,,,
+=======
+##
+>>>>>>> 954a428f5be2ad8492eb9e9691aca37e1bb69ac3
