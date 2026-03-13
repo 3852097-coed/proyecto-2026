@@ -18,8 +18,8 @@ header{
 
 /*Encabezado*/
 header {
-    background-color: palegreen;
-    color:beige;
+    background-color: rgb(235, 80, 8);
+    color: rgb(235, 80, 8);
 }
 
 /*menú*/
@@ -128,10 +128,44 @@ form{
     justify-content: space-around;
     margin-bottom: 5px;
 }
-
+/*Estilo para móviles*/
 @media (max-width: 768px){
     .contenedor-resumen{
         flex-direction: column;
     }
+    .tarjeta{
+        width: 100%;
+        margin-bottom: 15px;
+        border: 2px solid #1ad;
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .columna-eliminada{
+        display: none;
+    }
+    header{
+        background-color: #1ad;
+    }
+
+    .guardar-inventario{
+        width: 100%;
+    }
+
 }
+
+ .tarjeta{
+        width: 100%;
+        margin-bottom: 15px;
+        border: 2px solid #1ad;
+    }
+
+    .tabla-responsiva{
+        width: 100%;
+        overflow-x: auto;
+
+
+    }   
 
