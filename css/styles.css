@@ -18,8 +18,8 @@ header{
 
 /*Encabezado*/
 header {
-    background-color: rgb(235, 80, 8);
-    color: rgb(235, 80, 8);
+    background-color: rgb(183, 116, 204);
+    color: rgba(248, 250, 250, 0.849)
 }
 
 /*menú*/
@@ -66,18 +66,33 @@ input{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+input:focus{
+    border: 2px solid #1ad;
+    outline:nane;
+    box-shadow: 0 0 10px(0,0,0,0.2);
+
+}
 
 button:hover{
     background-color: #ee1515;
     cursor: pointer;
     transition: 0.1s;
     color: white;
+    transform: scale(1.05);
+}
+
+input:invalid:not(:placeholder-shown){
+    border: 2px solid black;
+}
+
+tbody tr:hover{
+    background-color: rgb(167, 218, 235);
 }
 
 form{
     box-shadow: 5px;
-    box-shadow: #333;
-    border: 1px solid black;
+    box-shadow: #0fa3dd;
+    border: 1px solid rgb(43, 24, 24);
     padding: 25px;
     padding-bottom: 30px;
 
@@ -92,7 +107,7 @@ form{
     flex-wrap: wrap;
     flex: 1;
     padding: 20px;
-    border: 2px solid #1ad;
+    border: 2px solid #eff5f5;
     text-align: center;
 }
 
@@ -133,6 +148,11 @@ form{
     .contenedor-resumen{
         flex-direction: column;
     }
+    .menu-list{
+       flex-direction: column; 
+    }
+
+
     .tarjeta{
         width: 100%;
         margin-bottom: 15px;
@@ -147,7 +167,7 @@ form{
         display: none;
     }
     header{
-        background-color: #1ad;
+        background-color: #D9B59C;
     }
 
     .guardar-inventario{
@@ -165,7 +185,5 @@ form{
     .tabla-responsiva{
         width: 100%;
         overflow-x: auto;
-
-
-    }   
+    }
 
