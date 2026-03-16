@@ -149,7 +149,7 @@ form{
         flex-direction: column;
     }
     .menu-list{
-       flex-direction: column; 
+       flex-direction: column;  
     }
 
 
@@ -167,10 +167,14 @@ form{
         display: none;
     }
     header{
-        background-color: #D9B59C;
+        background-color: #D9B59C; 
     }
 
     .guardar-inventario{
+        width: 100%; 
+    }
+
+    .limpiar{
         width: 100%;
     }
 
