@@ -1,0 +1,6 @@
+--INSERT INTO productos(nombre_prod,precio,stock,fecha_ingreso,id_categoria)
+ --VALUES ('pito',12.50,20,'2026-04-20',1),('silvin',12.50,20,'2026-04-20',1),('bufa',12.50,20,'2026-04-20',1),('cremallera',585,20,'2026-04-20',1);
+ --SELECT * FROM productos;
+ --INSERT INTO productos(nombre_prod,precio,stock,fecha_ingreso,id_categoria) 
+ --VALUES('tornillo de motor',2,10,'2026-04-20',1)
+ 
