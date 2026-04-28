@@ -1,3 +1,4 @@
+
 <?php
 //configuración de conección de IMAA Beauty
 $host = "localhost";
@@ -22,6 +23,8 @@ if(!$db_conn){
         die("Sistema en mantenimiento temporal");
         }
     }      
-        else{echo "Conexión exitosa ala BD";}
+        else {echo "Conexión exitosa ala BD";}
+
+    define(!defined('ACCESO')) die('Aceso denegado');    
 
 ?>
