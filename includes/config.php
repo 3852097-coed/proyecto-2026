@@ -6,15 +6,22 @@ $db_name = "db_inventario_empresa";
 $user = "postgres";
 $password = "Roalex1122"; 
 
-
 //Cadena de conexión
 $cadenaConexion = "host=$host port=$port dbname=$db_name user=$user password=$password";
-//Establecer una conexión 
-$db_conn = pg_connect($cadenaConexion);
+
+//Proceso de conexión activa.
+$db_conn = @pg_connect($cadenaConexion);
 
 //comprobar conexión si es o no exitosa 
+$modo = "dev";
+     
 if(!$db_conn){
-    die("Error de conexión con la Base de Datos". pg_last_error()); 
-}
-echo "Conexión exitosa a reparación de carros";
+    if($modo == "dev"){
+         die("Fallo: " . preg_last_error());
+        }else{
+        die("Sistema en mantenimiento temporal");
+        }
+    }      
+        else{echo "Conexión exitosa ala BD";}
+
 ?>

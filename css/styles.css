@@ -191,3 +191,8 @@ form{
         overflow-x: auto;
     }
 
+
+ .alerta{
+    padding: 20px; border: 1px solid red;
+ }
+
