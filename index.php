@@ -7,20 +7,20 @@
         </section>
     </main>
     <!--Formulario de regristro de productos-->
-    <form id="miformulario" action="registro.php"  method="post">
+    <form id="agregar_producto" action="registro.php"  method="post">
             <label for="txtNombre">nombre:</label>
-            <input type="text" id="txtNombre" name="nombre_prod" required><br><br>
+            <input type="text" id="txtNombre" name="txtNombre" ><br><br>
             <label for="numStock">cantidad:</label>
-            <input type="number" id="numStock" name="stock_prod" min="1"requiered><br><br>
+            <input type="number" id="numStock" name="numStock" ><br><br>
             <label for="selCat">categoria: </label>
             <select name="categoria_prod" id="selCat">
                 <option value="1">alimentos</option>
                 <option value="2">limpieza</option>
             </select><br><br>
             <label for="fecha">fecha de ingreso</label><br><br>
-            <input type="date" name="fecha" id="fecha"requiered><br><br>
+            <input type="date" name="fecha" id="fecha"><br><br>
             <label for="precio">precio unitario</label><br><br>
-            <input type="number" id="precio" name="precio_prod" min="0" step="0.01"requiered>
+            <input type="number" id="precio" name="precio">
             <button class="guardar-inventario" type="submit">Guardar en inventario</button><br><br>
             <button class="limpiar" type="reset">limpiar</button>
     </form>
@@ -61,6 +61,7 @@
         <div class="tarjeta">
             <p>usuarios</p>
         </div>
-    </div>    
+    </div> 
+    <script src="js/validar.js"></script>   
 <!--Pie de pagina dinámico-->
 <?php include 'includes/footer.php'; ?>
