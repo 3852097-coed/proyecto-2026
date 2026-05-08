@@ -13,7 +13,7 @@
             <label for="numStock">cantidad:</label>
             <input type="number" id="numStock" name="numStock" ><br><br>
             <label for="selCat">categoria: </label>
-            <select name="categoria_prod" id="selCat">
+            <select name="selCat" id="selCat">
                 <option value="1">alimentos</option>
                 <option value="2">limpieza</option>
             </select><br><br>
@@ -21,6 +21,8 @@
             <input type="date" name="fecha" id="fecha"><br><br>
             <label for="precio">precio unitario</label><br><br>
             <input type="number" id="precio" name="precio">
+            <label for="txtEmail">Correo Electronico: </label>
+            <input type="text" id="txtEmail" name="txtEmail"><br><br>
             <button class="guardar-inventario" type="submit">Guardar en inventario</button><br><br>
             <button class="limpiar" type="reset">limpiar</button>
     </form>
